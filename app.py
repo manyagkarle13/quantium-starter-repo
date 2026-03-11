@@ -9,6 +9,7 @@ df = pd.read_csv("processed_sales.csv")
 df["date"] = pd.to_datetime(df["date"])
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
 
